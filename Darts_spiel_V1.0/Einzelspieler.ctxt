@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Einzelspieler
+comment0.text=\r\n\ @author\ Luca\ &\ Anton\r\n\ @version\ 0.7\r\n
+comment1.params=bildschirm
+comment1.target=Einzelspieler(sum.kern.Bildschirm)
+comment2.params=
+comment2.target=void\ starteEinzelSpieler()
+comment3.params=
+comment3.target=void\ neustart()
+comment4.params=
+comment4.target=void\ run()
+comment5.params=
+comment5.target=void\ zeichnePfeil()
+comment6.params=
+comment6.target=void\ zeichneScheibe()
+comment7.params=
+comment7.target=void\ Pfeilfall()
+comment7.text=public\ void\ GameOver()\r\n\ \ \ \ {\r\n\r\n\ \ \ \ \ \ setImage(new\ GreenfootImage("Game\ Over",44,Color.RED,Color.BLACK));\r\n}
+numComments=8

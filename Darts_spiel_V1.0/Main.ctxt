@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Main
+comment0.text=\r\n\ @author\ Luca\ &\ Anton\r\n\ @version\ 0.7\r\n
+comment1.params=
+comment1.target=Main()
+comment2.params=
+comment2.target=void\ l\u00F6scheStartBildschirm()
+comment3.params=farbe1\ farbe2
+comment3.target=void\ starteStartBildschirm(int,\ int)
+numComments=4
