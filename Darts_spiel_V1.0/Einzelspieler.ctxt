@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Einzelspieler
-comment0.text=\r\n\ @author\ Luca\ &\ Anton\r\n\ @version\ 0.7\r\n
+comment0.text=\r\n\ @author\ Luca\ &\ Anton\r\n\ @version\ 1.0\r\n
 comment1.params=bildschirm
 comment1.target=Einzelspieler(sum.kern.Bildschirm)
 comment2.params=

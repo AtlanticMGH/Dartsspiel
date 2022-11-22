@@ -11,8 +11,9 @@ PROJEKTZWECK: Unterhaltung
 VERSION oder DATUM: 1.0 / 20.11.2022
 WIE IST DAS PROJEKT ZU STARTEN:
 AUTOR(EN): Luca & Anton
-BENUTZERHINWEISE:	
-	Steuerung: 
-		Spielmodus auswählen: auf gewünschten Spielmodus Klicken
-		Pfeil werfen: Doppelklick
-		
+BENUTZERHINWEISE:    
+    Steuerung: 
+        Starten: Main starten
+        Spielmodus auswählen: auf gewünschten Spielmodus Klicken
+        Pfeil werfen: Doppelklick
+        

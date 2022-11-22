@@ -3,7 +3,7 @@ import sum.kern.*;
 import sum.werkzeuge.*;
 /**
  * @author Luca & Anton
- * @version 0.7
+ * @version 1.0
  */
 public class Einzelspieler{
     // Objekte
@@ -31,9 +31,7 @@ public class Einzelspieler{
         score = 0;
         Yhochrunter = 3;
         Versuche = 3;
-        
-        
-        
+        meinStift.setzeSchriftgroesse(15);
         
         //Anfangswert der Scheibe
         meinStift.bewegeBis(derBildschirm.breite()-60,derBildschirm.hoehe()/2);//alternativ 580,240
@@ -137,8 +135,18 @@ public class Einzelspieler{
                 }
                 score += 1;
                 // Rechnet die Punkte hoch (Luca)
-                
+                // Aufploppen des textes "Nicht Schlecht" wenn der Pfeil Die scheibe Trifft ( Anton)
+                meinStift.bewegeBis(150,150);
+                meinStift.setzeSchriftGroesse(25);
+                meinStift.schreibeText("Nicht Schlecht");
                 meinStift.radiere();
+                dieUhr.warte(2000);
+                meinStift.radiere();
+                meinStift.bewegeBis(150,150);
+                meinStift.schreibeText("Nicht Schlecht");
+                meinStift.setzeSchriftGroesse(15);
+                
+                
                 meinStift.hoch();
                 meinStift.bewegeBis(stiftx, stifty);
                 meinStift.runter();

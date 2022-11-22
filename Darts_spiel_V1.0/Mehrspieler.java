@@ -37,6 +37,7 @@ public class Mehrspieler{
         Yhochrunter = 3;
         VersucheSpieler1 = 3;
         VersucheSpieler2 = 3;
+        meinStift.setzeSchriftgroesse(15);
         
         //Anfangswert der Scheibe
         meinStift.bewegeBis(derBildschirm.breite()-60,derBildschirm.hoehe()/2);//alternativ 580,240
@@ -48,12 +49,12 @@ public class Mehrspieler{
     
     //Startet den Einzelspieler
     public void starteMehrSpieler(){
-        meinStift.bewegeBis(derBildschirm.breite()-120, derBildschirm.hoehe()-30);
+        meinStift.bewegeBis(derBildschirm.breite()-130, derBildschirm.hoehe()-30);
         meinStift.schreibeText("Spieler 1 Punkte: "+oldScoreSpieler1);
         meinStift.bewegeBis(derBildschirm.breite()-610, derBildschirm.hoehe()-30);
         meinStift.schreibeText("Spieler 1 Versuche: "+VersucheSpieler1);
         meinStift.setzeFarbe(7);
-        meinStift.bewegeBis(derBildschirm.breite()-120, derBildschirm.hoehe()-10);
+        meinStift.bewegeBis(derBildschirm.breite()-130, derBildschirm.hoehe()-10);
         meinStift.schreibeText("Spieler 2 Punkte: "+oldScoreSpieler2);
         meinStift.bewegeBis(derBildschirm.breite()-610, derBildschirm.hoehe()-10);
         meinStift.schreibeText("Spieler 2 Versuche: "+VersucheSpieler2);
@@ -79,7 +80,7 @@ public class Mehrspieler{
         VersucheSpieler1 = 3;
         VersucheSpieler2 = 3;
         meinStift.hoch();
-        meinStift.bewegeBis(derBildschirm.breite()-120, derBildschirm.hoehe()-30);
+        meinStift.bewegeBis(derBildschirm.breite()-130, derBildschirm.hoehe()-30);
         meinStift.runter();
         meinStift.schreibeText("Spieler 1 Punkte: "+oldScoreSpieler1);
         meinStift.hoch();
@@ -88,7 +89,7 @@ public class Mehrspieler{
         meinStift.schreibeText("Spieler 1Versuche: "+VersucheSpieler1);
         meinStift.hoch();
         meinStift.setzeFarbe(7);
-        meinStift.bewegeBis(derBildschirm.breite()-120, derBildschirm.hoehe()-10);
+        meinStift.bewegeBis(derBildschirm.breite()-130, derBildschirm.hoehe()-10);
         meinStift.runter();
         meinStift.schreibeText("Spieler 2 Punkte: "+oldScoreSpieler2);
         meinStift.hoch();
@@ -159,18 +160,26 @@ public class Mehrspieler{
                 }
                 scoreSpieler1 += 1;
                 // Rechnet die Punkte hoch (Luca)
-                
+                // Aufploppen des textes "Nicht Schlecht" wenn der Pfeil Die scheibe Trifft ( Anton)
+                meinStift.bewegeBis(150,150);
+                meinStift.setzeSchriftGroesse(25);
+                meinStift.schreibeText("Nicht Schlecht");
                 meinStift.radiere();
+                dieUhr.warte(2000);
+                meinStift.bewegeBis(150,150);
+                meinStift.schreibeText("Nicht Schlecht");
+                meinStift.setzeSchriftGroesse(15);
+                
                 meinStift.hoch();
                 meinStift.bewegeBis(stiftx, stifty);
                 meinStift.runter();
                 zeichnePfeil();
                 meinStift.hoch();
-                meinStift.bewegeBis(derBildschirm.breite()-120, derBildschirm.hoehe()-30);
+                meinStift.bewegeBis(derBildschirm.breite()-130, derBildschirm.hoehe()-30);
                 meinStift.runter();
                 meinStift.schreibeText("Spieler 1 Punkte: "+oldScoreSpieler1);
                 meinStift.hoch();
-                meinStift.bewegeBis(derBildschirm.breite()-120, derBildschirm.hoehe()-30);
+                meinStift.bewegeBis(derBildschirm.breite()-130, derBildschirm.hoehe()-30);
                 meinStift.runter();
                 int temp = scoreSpieler1 - oldScoreSpieler1;
                 oldScoreSpieler1 += temp; 
@@ -252,18 +261,26 @@ public class Mehrspieler{
                 }
                 scoreSpieler2 += 1;
                 // Rechnet die Punkte hoch (Luca)
-                
+                // Aufploppen des textes "Nicht Schlecht" wenn der Pfeil Die scheibe Trifft ( Anton)
+                meinStift.bewegeBis(150,150);
+                meinStift.setzeSchriftGroesse(25);
+                meinStift.schreibeText("Nicht Schlecht");
                 meinStift.radiere();
+                dieUhr.warte(2000);
+                meinStift.bewegeBis(150,150);
+                meinStift.schreibeText("Nicht Schlecht");
+                meinStift.setzeSchriftGroesse(15);
+                
                 meinStift.hoch();
                 meinStift.bewegeBis(stiftx, stifty);
                 meinStift.runter();
                 zeichnePfeil();
                 meinStift.hoch();
-                meinStift.bewegeBis(derBildschirm.breite()-120, derBildschirm.hoehe()-10);
+                meinStift.bewegeBis(derBildschirm.breite()-130, derBildschirm.hoehe()-10);
                 meinStift.runter();
                 meinStift.schreibeText("Spieler 2 Punkte: "+oldScoreSpieler2);
                 meinStift.hoch();
-                meinStift.bewegeBis(derBildschirm.breite()-120, derBildschirm.hoehe()-10);
+                meinStift.bewegeBis(derBildschirm.breite()-130, derBildschirm.hoehe()-10);
                 meinStift.runter();
                 int temp = scoreSpieler2 - oldScoreSpieler2;
                 oldScoreSpieler2 += temp; 
